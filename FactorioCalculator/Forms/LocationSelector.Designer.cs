@@ -1,4 +1,6 @@
-﻿namespace FactorioCalculator.Forms
+﻿using FactorioCalculator.Properties;
+
+namespace FactorioCalculator.Forms
 {
     partial class LocationSelector
     {
@@ -43,8 +45,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(374, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "We need to load the Factorio files from disk, please select your install location" +
-    ":";
+            this.label1.Text = Resources.LocationSelector_RequestInstallLocation;
             // 
             // locationInput
             // 
@@ -61,7 +62,7 @@
             this.browseButton.Name = "browseButton";
             this.browseButton.Size = new System.Drawing.Size(66, 19);
             this.browseButton.TabIndex = 2;
-            this.browseButton.Text = "Browse";
+            this.browseButton.Text = Resources.LocationSelector_BrowseLabel;
             this.browseButton.UseVisualStyleBackColor = true;
             this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
             // 
@@ -73,7 +74,7 @@
             this.continueButton.Name = "continueButton";
             this.continueButton.Size = new System.Drawing.Size(66, 19);
             this.continueButton.TabIndex = 3;
-            this.continueButton.Text = "OK";
+            this.continueButton.Text = Resources.LocationSelector_OkLabel;
             this.continueButton.UseVisualStyleBackColor = true;
             this.continueButton.Click += new System.EventHandler(this.continueButton_Click);
             // 

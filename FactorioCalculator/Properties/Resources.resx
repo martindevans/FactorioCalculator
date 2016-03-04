@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="LocationSelector_BrowseLabel" xml:space="preserve">
+    <value>Browse</value>
+  </data>
   <data name="LocationSelector_LoadLibrary_FactorioFound_Loaded" xml:space="preserve">
     <value>Found Factorio: [{0}], loaded.</value>
   </data>
@@ -125,5 +128,11 @@
   </data>
   <data name="LocationSelector_LoadLibrary_FactorioNotFound" xml:space="preserve">
     <value>Factorio not found at specified location</value>
+  </data>
+  <data name="LocationSelector_OkLabel" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="LocationSelector_RequestInstallLocation" xml:space="preserve">
+    <value>We need to load the Factorio files from disk, please select your install location :</value>
   </data>
 </root>

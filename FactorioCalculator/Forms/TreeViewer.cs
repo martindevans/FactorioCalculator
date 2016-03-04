@@ -54,13 +54,14 @@ namespace FactorioCalculator.Forms
             foreach (var node in RecipeTreeView.Nodes)
                 ((TreeNode)node).Expand();
 
+            TotalsDisplay.Items.Clear();
             foreach (var res in totals)
                 TotalsDisplay.Items.Add(string.Format("{0} ({1})", res.Key.Name, res.Value));
         }
 
         private IEnumerable<TreeNode> ToTreeNodes(Recipe recipe, double amount, ConcurrentDictionary<Item, double> totals)
         {
-            var node = new TreeNode(string.Format(CultureInfo.CurrentCulture, "{0} ({1})", recipe.Name, amount));
+            var node = new TreeNode(string.Format(CultureInfo.CurrentCulture, "{0} ({1} in {2}s)", recipe.Name, amount, recipe.Time * amount));
 
             foreach (var ingredient in recipe.Ingredients)
                 node.Nodes.Add(ToTreeNode(ingredient.Item, ingredient.Amount * amount, totals));
